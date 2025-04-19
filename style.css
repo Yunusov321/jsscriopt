@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(135deg, #1c1c2d, #2c2c3c);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #ffffff;
+    margin: 50px 0 30px 0;
+    letter-spacing: 2px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="number"] {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background: #2e2e42;
+    color: #ffffff;
+    box-shadow: 4px 4px 10px #1a1a28, -4px -4px 10px #3a3a52;
+    transition: 0.3s ease;
+}
+
+input[type="number"]:focus {
+    background: #383858;
+    box-shadow: inset 2px 2px 5px #1a1a28, inset -2px -2px 5px #3a3a52;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: linear-gradient(145deg, #383858, #2e2e42);
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px #1a1a28, -4px -4px 10px #3a3a52;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #454575;
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 8px #1a1a28, -2px -2px 8px #3a3a52;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+#result h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin: 0;
+}
+
+#result p {
+    font-size: 24px;
+    color: #00ff99;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    input[type="number"] {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    button {
+        width: 90%;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #result h2 {
+        font-size: 24px;
+    }
+
+    #result p {
+        font-size: 20px;
+    }
+}
